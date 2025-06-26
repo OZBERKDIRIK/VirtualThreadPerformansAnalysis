@@ -1,6 +1,6 @@
-package core;
+package main.java.core;
 
-import core.User;
+import main.java.core.*;
 import java.time.LocalDateTime;
 
 public class Message {

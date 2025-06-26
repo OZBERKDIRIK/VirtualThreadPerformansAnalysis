@@ -1,4 +1,4 @@
-package core;
+package main.java.core;
 
 public class User {
         private String id;
