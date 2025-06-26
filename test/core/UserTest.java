@@ -1,10 +1,8 @@
 package core;
-
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import main.java.core.*;
 import core.User;
-import core.Message;
-
 
 public class UserTest {
     @Test
@@ -12,7 +10,7 @@ public class UserTest {
         User sender = new User("u1", "Özberk");
         User receiver = new User("u2", "Test");
 
-        core.Message message = new Message(sender, receiver, "Merhaba!");
+        Message message = new Message(sender, receiver, "Merhaba!");
 
         assertEquals(sender, message.getSender());
         assertEquals(receiver, message.getReceiver());
@@ -23,7 +21,7 @@ public class UserTest {
     @Test
     public void testMessageToString() {
         User sender = new User("u1", "Özberk");
-        User receiver = new User("u2", "Test");
+        User receiver = new core.User("u2", "Test");
         Message message = new Message(sender, receiver, "Selam");
 
         String result = message.toString();

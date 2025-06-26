@@ -6,10 +6,9 @@ import java.net.Socket;
 
 
 public class Server {
-    private static final int PORT = 5000;
     public static void main(String[] args) {
         System.out.println("Sunucu başlatılıyor...");
-
+        final int PORT = 5001;
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
             System.out.println("Sunucu port " + PORT + " üzerinde dinleniyor...");
 
