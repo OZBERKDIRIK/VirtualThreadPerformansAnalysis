@@ -1,14 +1,33 @@
 package core;
 
 public class User {
-        private String username;
+        private String id;
+        private String name;
 
-        public User(String username) {
-            this.username = username;
+        public User(String id, String name) {
+            this.id = id;
+            this.name = name;
         }
 
-        public String getUsername() {
-            return username;
+        // Getter
+        public String getId() {
+            return id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        // Setter
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        // toString
+        @Override
+        public String toString() {
+            return "User{id='" + id + "', name='" + name + "'}";
         }
     }
+
 
