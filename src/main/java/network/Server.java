@@ -1,9 +1,10 @@
-package network;
+package main.java.network;
 
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import main.java.network.Client;
+
+
 public class Server {
     private static final int PORT = 5000;
     public static void main(String[] args) {
@@ -17,7 +18,7 @@ public class Server {
                 System.out.println("Yeni bağlantı: " + clientSocket.getInetAddress());
 
                 // Her bağlantı için yeni thread
-                Thread clientThread = new Thread(new Client(clientSocket));
+                Thread clientThread = new Thread(new ClientHandler(clientSocket));
                 clientThread.start();
             }
 
