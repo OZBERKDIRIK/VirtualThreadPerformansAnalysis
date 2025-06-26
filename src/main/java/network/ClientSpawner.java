@@ -1,4 +1,4 @@
-package main.java.core;
+package main.java.network;
 
 import java.io.IOException;
 import java.io.PrintWriter;
