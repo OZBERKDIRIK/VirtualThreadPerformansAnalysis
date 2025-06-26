@@ -1,5 +1,6 @@
 package core;
 
+import core.User;
 import java.time.LocalDateTime;
 
 public class Message {
